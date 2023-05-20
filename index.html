@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- defines the action which is going to be performed on form submission.
+    You add a file path in this action, this file contains tha server-side(backend)
+    code which handles your form data. -->
+
+    <div>
+        <nav class=" navbar">
+            <h1 color:"white">Library System  </h1>
+            <a href="">Books</a>
+            <a href="">Register</a>
+            <a href="">Contact Us</a>
+            <a href="">Logout</a>
+        </nav>
+    </div>
+
+    <div>
+        <h1>Books</h1>
+    </div>
+
+    <table border="1" align="center" width="100%" cellspacing="0">
+        
+            <!-- row 1  -->
+                    <tr>
+                        <th>Book ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Genre</th>
+                        <th>Availibility</th>
+                    </tr>
+                
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <table border="1" align="center" width="100%" cellspacing="0" >
+                                <tr>
+                                    <th><a href="#">Daily-Life</a></th>
+                                </tr>
+                                <!-- <th>Book Title 1</th> -->
+                                <tr>
+                                   <th>Publication date:2000</th> 
+                                </tr>
+                                <tr>
+                                    <th>Page Count:250</th>
+                                </tr>
+                                <tr>
+                                    <th>ISBN: 123-4567890123</th>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Swami Vivekanand</td>
+                        <td>Self-Help</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <!-- row 2  -->
+                
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <table border="1" align="center" width="100%" cellspacing="0" >
+                                <tr>
+                                    <th><a href="#">Harry Potter</a></th>
+                                </tr>
+                                <!-- <th>Book Title 1</th> -->
+                                <tr>
+                                   <th>Publication date:2005</th> 
+                                </tr>
+                                <tr>
+                                    <th>Page Count:300</th>
+                                </tr>
+                                <tr>
+                                    <th>ISBN: 123-4567890456</th>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>J.K.rowling</td>
+                        <td>Fiction</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <!-- row 3 -->
+                    
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <table border="1" align="center" width="100%" cellspacing="0" >
+                                <tr>
+                                    <th><a href="#">Alchemist</a></th>
+                                </tr>
+                                <!-- <th>Book Title 1</th> -->
+                                <tr>
+                                   <th>Publication date:2010</th> 
+                                </tr>
+                                <tr>
+                                    <th>Page Count:350</th>
+                                </tr>
+                                <tr>
+                                    <th>ISBN: 123-4567890789</th>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Paulo Cohelo</td>
+                        <td>Fiction</td>
+                        <td>Available</td>
+                    </tr>
+
+    </table>
+
+    <div>
+        <h1>Register</h1>
+    </div>
+
+    <form method="post" action="file.js" name="form" id="form">
+        <div>
+            <label for="fname"  class="abc">First Name:</label> <br>
+            <input type="text" name="fname" id="fname"   width="100%" required>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </div>
+
+        <div>
+            <label for="lname" class="abc">Last Name:</label> <br>
+            <input type="text" name="lname" id="lname"    required>
+        </div>
+
+        <div>
+            <label for="date">date Of Birth:</label> <br>
+            <input type="date" name="date"  id="date"> 
+        </div>
+       
+        <div>
+            <label for="age" class="abc">Age:</label> <br>
+            <input type="number"  min="5 " max="100"  name="age" id="age" required>
+        </div>
+        <div>
+            <label for="email" class="abc">Email:</label> <br>
+            <input type="email" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" name="email" id="email">
+        </div>
+        <div>
+            <label for="password" class="abc">Password:</label> <br>
+            <input type="password" name="password" maxlength="10" id="password">
+        </div>
+
+        <div>
+            <label for="confirm_password" class="abc">Confirm Password:</label> <br>
+            <input type="password" name="confirm_password" maxlength="10" id="confirm_password">
+        </div>
+ 
+        <br>
+
+        <div>
+            <button class="btn">Register</button>
+        </div>
+    </form>
+    
+    
+
+
+</body>
+</html>
